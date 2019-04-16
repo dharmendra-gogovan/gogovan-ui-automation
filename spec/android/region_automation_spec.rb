@@ -27,5 +27,16 @@ describe 'Basic Android interactions' do
 
     transport_badge = @driver.find_element :accessibility_id, 'SERVICE_BIG_BTN_0'
     transport_badge.click
+
+    mock_route = @driver.find_element :accessibility_id, 'MOCK_ROUTE'
+    mock_route.click
+
+    sleep(5)
+
+    next_button = @driver.find_element :accessibility_id, 'NEXT_BTN'
+    next_button.click
+
+    sleep(5)
+
   end
 end
