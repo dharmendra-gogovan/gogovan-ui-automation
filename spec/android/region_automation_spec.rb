@@ -15,6 +15,7 @@ describe 'Basic Android interactions' do
 
   before(:all) do
     @driver = Appium::Driver.new(desired_caps, false).start_driver
+    @core = Appium::Core
   end
 
   after(:all) do
@@ -22,6 +23,6 @@ describe 'Basic Android interactions' do
   end
 
   it 'Wait for Transport page' do
-    @driver.find_element :id, 'topSheet'
+    @core::Wait.until_true { exist { @driver.find_element(id: 'topSheet') } }
   end
 end
