@@ -22,6 +22,6 @@ describe 'Basic Android interactions' do
   end
 
   it 'Wait for Transport page' do
-    wait_until { !exists { @driver.find_element :id, 'topSheet' } }
+    @driver.find_element :id, 'topSheet'
   end
 end
