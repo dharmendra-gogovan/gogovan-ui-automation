@@ -24,5 +24,8 @@ describe 'Basic Android interactions' do
 
   it 'Wait for Transport page' do
     @core::Wait.until_true { exist { @driver.find_element(id: 'topSheet') } }
+
+    transport_badge = @driver.find_element :accessibility_id, 'SERVICE_BIG_BTN_0'
+    transport_badge.click
   end
 end
