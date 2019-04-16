@@ -1,3 +1,4 @@
+require 'em/pure_ruby'
 require 'rubygems'
 require 'appium_lib'
 require 'test/unit'
