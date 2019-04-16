@@ -3,7 +3,7 @@ require_relative '../../spec/spec_helper'
 desired_caps = {
   caps: {
     platformName: 'Android',
-    platformVersion: '9.0',
+    platformVersion: '9',
     deviceName: 'emulator-5554',
     app: ANDROID_APP,
     automationName: 'UIAutomator2',
